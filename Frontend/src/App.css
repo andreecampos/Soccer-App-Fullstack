@@ -1,0 +1,42 @@
+.App {
+width: 100%;
+height: 100vh;
+background-image: url("./img/stadium.jpeg");
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+display: grid;
+place-items: center;
+}
+.framme-2{
+  position: relative;
+  width: 1478px;
+  height: 1010px;
+  left: 47px;
+  top: 7px;
+  
+  border: 2px solid #FFFFFF;
+  box-shadow: inset 3px 3px 3px #FFFFFF;
+  border-radius: 24px;
+}
+
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+
+
+
+/* aprender rotacion */
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap');
+.signup-container {
+    display: grid;
+    grid-template-areas: "left right";
+    max-width: 900px;
+    font-size: 10px;
+     justify-items: center;
+}
+
+.left-container{
+    position: absolute;
+    left: 2px;
+    display: grid;
+    grid-template-areas: "." ".";
+    width: 762px;
+    height: 1010px;
+    background: rgba(20, 35, 72, 0.67);
+    }
+.left-container .set-1 {
+    display: flex;
+    justify-content: space-between;
+    /* background-color: bisque; */
+    height: 183px;
+    top: 323px;
+    position: absolute;
+    width: 699px;
+    margin-left: 27px;
+  }
+.left-container .set {
+    display: flex;
+    justify-content: space-between;
+    /* background-color: yellow; */
+    top: 446px;
+    position: absolute;
+    width: 699px;
+    margin-left: 27px;
+  }
+.left-container .set-3 {
+    display: flex;
+    justify-content: space-between;
+    /* background-color: red; */
+    top: 121px;
+    position: absolute;
+    width: 697px;
+   
+  }
+
+.left-container input {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 25px;
+    width: 231px;
+}
+.left-container input, .left-container label {
+    color: rgb(255 255 255);
+    margin: 12px;
+    display: flow-root;
+  }
+.left-container .pets-photo{
+    align-items: center;
+    display: grid;
+    grid-template-areas: ". .";
+}
+.left-container .pets-photo button {
+    border: none;
+    border-radius: 50%;
+    height: 38px;
+    margin-right: 10px;
+    outline: none;
+    width: 38px;
+  }
+.left-container .pets-photo button i {
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 16px;
+  }
+.left-container .pets-gender .radio-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 21px;
+  }
+.radio-container {
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    display: inline-block;
+    padding: 5px;
+  }
+  .radio-container label {
+    background: transparent;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    display: inline-block;
+    height: 26px;
+    line-height: 26px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    transition: 0.2s all ease-in-out;
+    width: 80px;
+  }
+  .radio-container input[type="radio"] {
+    display: none;
+  }
+  .radio-container input[type="radio"]:checked + label {
+    background: #05bb96;
+    width: 149px;
+    height: 33px;
+  }
+
+.right-container{
+    background-image: url('https://i.pinimg.com/564x/df/30/fd/df30fd6c01277531f9ba69e0bbe6e7f5.jpg');
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    left: 763px;
+    display: grid;
+    grid-template-areas: "." ".";
+    width: 714px;
+    height: 1012px;
+    border-radius: 0px 26px 26px 0px;
+
+  }
+
+  .Home-button{
+    --glow-color: rgb(217, 176, 255);
+     --glow-spread-color: rgba(191, 123, 255, 0.781);
+     --enhanced-glow-color: rgb(231, 206, 255);
+     --btn-color: rgb(100, 61, 136);
+     border: .25em solid var(--glow-color);
+     color: var(--glow-color);
+     font-size: 20px;
+     font-weight: bold;
+     background-color: var(--btn-color);
+     border-radius: 1em;
+     outline: none;
+     box-shadow: 0 0 1em .25em var(--glow-color),
+            0 0 4em 1em var(--glow-spread-color),
+            inset 0 0 .75em .25em var(--glow-color);
+     text-shadow: 0 0 .5em var(--glow-color);
+     position: relative;
+     transition: all 0.3s;
+     top: 800px;
+     height: 50px;
+    left: -385px;
+    width: 20%;
+    }
+    .Home-button:after{
+    pointer-events: none;
+     content: "";
+     position: absolute;
+     top: 120%;
+     left: 0;
+     height: 100%;
+     width: 100%;
+     background-color: var(--glow-spread-color);
+     filter: blur(2em);
+     opacity: .7;
+     transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
+    }
+    .Home-button:hover{
+        color: var(--btn-color);
+        background-color: var(--glow-color);
+        box-shadow: 0 0 1em .25em var(--glow-color),
+               0 0 4em 2em var(--glow-spread-color),
+               inset 0 0 .75em .25em var(--glow-color);
+    }
+    .Home-button:active{
+        box-shadow: 0 0 0.6em .25em var(--glow-color),
+        0 0 2.5em 2em var(--glow-spread-color),
+        inset 0 0 .5em .25em var(--glow-color);
+    }
+.team-logo{
+        background-image: url("./team_logo.PNG");
+        position: absolute;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        left: 450px;
+        top: 84px;
+        width: 200px;
+        height: 200px;
+    }
+
+    
+

@@ -1,0 +1,101 @@
+.side-user{
+position: absolute;
+width: 367px;
+height: 1010px;
+left: 0px;
+top: 0px;
+
+background: rgba(20, 35, 72, 0.67);
+}
+.user-bild{
+position: absolute;
+/* width: 124px;
+height: 124px; */
+left: 88px;
+top: 84px;
+width: 200px;
+height: 200px;
+background-color:white;
+border-radius: 100%;
+}
+.user-info{
+top: 101px;
+position: absolute;
+text-align: center;
+
+
+}
+.user-info h1{
+position: absolute;
+ width: 200px;
+left: 80px;
+top: 197px;
+font-size: 25px;
+color: #FFFFFF;
+
+}
+.user-info h2{
+position: absolute;
+width: 200px;
+left: 80px;
+font-size: 25px;
+top: 270px;
+
+
+color: rgba(255, 255, 255, 0.25);
+}
+.Profile-button{
+--glow-color: rgb(217, 176, 255);
+ --glow-spread-color: rgba(191, 123, 255, 0.781);
+ --enhanced-glow-color: rgb(231, 206, 255);
+ --btn-color: rgb(100, 61, 136);
+ border: .25em solid var(--glow-color);
+ color: var(--glow-color);
+ font-size: 20px;
+ font-weight: bold;
+ background-color: var(--btn-color);
+ border-radius: 1em;
+ outline: none;
+ box-shadow: 0 0 1em .25em var(--glow-color),
+        0 0 4em 1em var(--glow-spread-color),
+        inset 0 0 .75em .25em var(--glow-color);
+ text-shadow: 0 0 .5em var(--glow-color);
+ position: relative;
+ transition: all 0.3s;
+ top: 800px;
+ height: 50px;
+}
+.Profile-button:after{
+pointer-events: none;
+ content: "";
+ position: absolute;
+ top: 120%;
+ left: 0;
+ height: 100%;
+ width: 100%;
+ background-color: var(--glow-spread-color);
+ filter: blur(2em);
+ opacity: .7;
+ transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
+}
+.Profile-button:hover{
+    color: var(--btn-color);
+    background-color: var(--glow-color);
+    box-shadow: 0 0 1em .25em var(--glow-color),
+           0 0 4em 2em var(--glow-spread-color),
+           inset 0 0 .75em .25em var(--glow-color);
+}
+.Profile-button:active{
+    box-shadow: 0 0 0.6em .25em var(--glow-color),
+    0 0 2.5em 2em var(--glow-spread-color),
+    inset 0 0 .5em .25em var(--glow-color);
+}
+
+.user-description{
+position: absolute;
+top: 450px;
+text-align: center;
+font-size: 20px;
+margin: 10px;
+color: #FFFFFF;
+}

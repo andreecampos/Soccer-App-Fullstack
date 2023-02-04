@@ -1,0 +1,31 @@
+.players-wrapper{
+    display: flex;
+    background: rgba(20, 35, 72, 0.67);
+    position: absolute;
+    left: 1021px;
+    width: 449px;
+    height: 100%;
+    
+}
+.players-col1, .players-col2{
+   
+   width: 100%;
+ 
+  
+}
+.players-col1, .players-col2, img{
+    /* background-color: aqua; */
+    padding-top: 30px;
+    padding-bottom: 20px;
+    margin: 20px;
+    
+
+
+}
+.players-avatar{
+    background-color:white;
+    border-radius: 50%;
+    width: 124px;
+    height: 124px;
+    margin-bottom: 51px;
+}

@@ -1,0 +1,10 @@
+.football-field{
+    position: absolute;
+    width: 593px;
+    height: 1008px;
+    left: 432px;
+    background-size: 585px;
+    background-repeat: no-repeat;
+    /* linear-gradient(180deg, rgba(250, 251, 255, 0.044) 0%, rgba(255, 255, 255, 0.142) 100%),  */
+    background-image: url("../../img/timothy-tan-PAe2UhGo-S4-unsplash.jpg");
+}

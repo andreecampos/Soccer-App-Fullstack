@@ -33,16 +33,18 @@ app.post("/register", async (req, res) => {
 //Get the POST data from frontend
 app.post("/login", async (req, res) => {
   console.log(req.body);
+  const { email, password } = req.body;
 
-  const user = await UserSchema.findOne({
-    email: req.body.email,
-    password: req.body.password,
-  });
-  if (user) {
-    return res.json({ status: "ok", user: true });
-  } else {
-    res.json({ status: "error", user: false });
+  const user = await UserSchema.findOne({ email });
+  if (!user) {
+    return res.json({ status: "error", error: "Email not found" });
   }
+  // Verifica si la contraseña es correcta
+  const isMatch = await bcrypt.compare(password, user.password);
+  if (!isMatch) {
+    return res.json({ status: "error", error: "Incorrect password" });
+  }
+  return res.status(200).json({ status: "success" });
 });
 
 app.listen(5005, () => {

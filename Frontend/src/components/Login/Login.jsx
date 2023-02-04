@@ -17,14 +17,21 @@ const Login = () => {
       //LOGIN
       //sent data with post, do a fetch or axios to url of backend
       .post("http://localhost:5005/login", user)
-      .then((response) => console.log("login response", response));
+      .then((response) => {
+        console.log("login response", response);
+        if (response.data.status === "error") {
+          alert(response.data.error);
+        } else {
+          navigate("/HomePage");
+        }
+      });
 
-    if (user) {
-      alert("please cheack your email and password");
-      navigate("/HomePage");
-    } else {
-      navigate("/HomePage");
-    }
+    // if (user) {
+    //   alert("please cheack your email and password");
+    //   navigate("/HomePage");
+    // } else {
+    //   navigate("/HomePage");
+    // }
   };
 
   const handleRegister = (e) => {

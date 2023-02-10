@@ -3,6 +3,8 @@ const app = express();
 const cors = require("cors");
 const bcrypt = require("bcrypt");
 
+const PORT = process.env.PORT || 5005;
+
 //DB connection
 const mongoose = require("mongoose");
 mongoose
@@ -47,6 +49,6 @@ app.post("/login", async (req, res) => {
   return res.status(200).json({ status: "success" });
 });
 
-app.listen(5005, () => {
-  console.log("server started on 5005");
+app.listen(PORT, () => {
+  console.log("server started on", PORT);
 });
